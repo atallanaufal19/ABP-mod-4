@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Animasi dengan jQuery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#box {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+<body>
+	<button id="animateButton">click</button>
+	<div id="box"></div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+        $(document).ready(function() {
+	        $("#animateButton").click(function() {
+		        $("#box").toggleClass("animate");
+	        });
+        });
+    </script>
+</body>
+</html>

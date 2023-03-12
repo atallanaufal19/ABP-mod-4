@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hide and Show Example with Multiple Content using jQuery</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		.hiddentext {
+			display: none;
+		}
+	</style>
+	<script>
+		$(document).ready(function() {
+			$('#button').click(function() {
+				$('.hiddentext').toggle();
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="button">click untuk melihat teks tersembunyi</button>
+	<div class="hiddentext">
+		<p>hello world.</p>
+	</div>
+</body>
+</html>
